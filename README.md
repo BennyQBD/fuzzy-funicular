@@ -2,6 +2,7 @@
 
 ### TODO:
 - Redo these steps *from scratch* on a separate branch. Verify that they actually get the same result.
+- Somewhere in the steps needs to be how to create the .gitignore!
 
 ### Project setup steps
 - Git repository
