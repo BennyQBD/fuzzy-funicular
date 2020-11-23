@@ -1,0 +1,28 @@
+{
+  "name": "myexample",
+  "version": "0.0.1",
+  "description": "myexample",
+  "main": "index.js",
+  "scripts": {
+      "test": "mocha -r ts-node/register src/**/*.spec.ts",
+      "coverage": "npx nyc npm run test",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "watch-test": "npx tsc-watch --onSuccess 'npm run coverage'",
+    "watch-start": "npx tsc-watch --onSuccess 'npm start'"
+  },
+  "author": "",
+  "license": "AGPL",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "chai": "^4.2.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "ts-node": "^9.0.0",
+    "tsc-watch": "^4.2.9"
+  }
+}
